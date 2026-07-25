@@ -6,27 +6,30 @@
 <title>品牌數位整合行銷提案｜麥角數位行銷</title>
 <style>
 :root{
-  --ink:#202A1F; --forest:#2F3E2F; --olive:#6A7354; --sage:#9DBC90;
-  --gold:#86612B; --goldlt:#A8813A;
-  --cream:#FAF9F5; --paper:#fff; --line:#E5E3DC; --mute:#78766E;
-  --ok:#3F6B4A; --okbg:#EAF2E9; --add:#8A6520; --addbg:#F8F0E1; --subc:#4C5E76; --subbg:#EAEFF5;
+  --ink:#17181A; --body:#3B3F45; --mute:#6B7078; --line:#E3E5E8;
+  --forest:#17181A; --olive:#4B5057;
+  --leaf:#F0532B; --sage:#F0532B;
+  --gold:#C2401E; --goldlt:#F0532B; --sky:#4B5057;
+  --cream:#FAFAFA; --paper:#fff;
+  --ok:#17181A; --okbg:#fff; --add:#C2401E; --addbg:#FDEDE8; --subc:#4B5057; --subbg:#EDEEF0;
+  --tint:#F4F5F6; --tint2:#EDEEF0;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--cream);color:var(--ink);
+body{margin:0;background:var(--cream);color:var(--body);
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
   line-height:1.8;-webkit-font-smoothing:antialiased}
 .wrap{max-width:1060px;margin:0 auto;padding:0 24px}
 
 /* ===== masthead ===== */
-.mast{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);
+.mast{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);
   border-bottom:1px solid var(--line)}
 .mast .wrap{display:flex;align-items:center;gap:20px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
 .logo{height:42px;display:block;flex:0 0 auto}
 .tabs{display:flex;gap:6px;flex-wrap:wrap;margin-left:auto}
 .tab{font-size:13px;font-weight:700;text-decoration:none;color:var(--olive);padding:7px 16px;cursor:pointer;
   border:1px solid var(--line);border-radius:100px;transition:.15s;background:var(--paper)}
-.tab:hover{border-color:var(--olive);background:#F3F5F0}
+.tab:hover{border-color:var(--ink);background:var(--tint)}
 .tab.on{background:var(--forest);border-color:var(--forest);color:#fff}
 @media(max-width:640px){.logo{height:34px}.tabs{margin-left:0;width:100%}.tab{flex:1;text-align:center;padding:7px 8px}}
 
@@ -35,10 +38,12 @@ body{margin:0;background:var(--cream);color:var(--ink);
 .view.on{display:block}
 .titleblock{background:var(--paper);border-bottom:1px solid var(--line);padding:34px 0 42px}
 .eyebrow{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:700;margin:0 0 10px}
-h1{font-size:34px;line-height:1.4;margin:0 0 14px;color:var(--forest)}
-h1 .thin{color:var(--olive);font-weight:400}
+h1{font-size:34px;line-height:1.4;margin:0 0 14px;color:var(--ink)}
+h1 .thin{color:var(--mute);font-weight:400}
 .titleblock p.lead{margin:0;color:var(--mute);font-size:14.5px;max-width:730px}
-.rule{height:3px;width:56px;background:linear-gradient(90deg,var(--sage),var(--gold));border-radius:3px;margin:24px 0 0}
+.rule{display:flex;gap:4px;margin:24px 0 0}
+.rule i{height:4px;border-radius:3px;display:block}
+.rule i:nth-child(1){background:var(--goldlt);width:38px}.rule i:nth-child(2){background:var(--ink);width:14px}.rule i:nth-child(3){background:#C9CCD1;width:8px}
 @media(max-width:640px){h1{font-size:26px}}
 
 /* ===== quote meta ===== */
@@ -46,35 +51,35 @@ h1 .thin{color:var(--olive);font-weight:400}
 .meta table{width:100%;border-collapse:collapse;font-size:13.5px}
 .meta td{padding:12px 16px;border-bottom:1px solid var(--line);vertical-align:middle}
 .meta tr:last-child td{border-bottom:none}
-.meta td.k{background:#F5F5F0;color:var(--forest);font-weight:700;width:130px;white-space:nowrap}
+.meta td.k{background:var(--tint2);color:var(--forest);font-weight:700;width:130px;white-space:nowrap}
 @media(max-width:700px){.meta td.k{width:92px;font-size:12px}.meta td{padding:9px 10px;font-size:12.5px}}
 
 /* ===== section head ===== */
 .sechead{margin:60px 0 0}
-h2.sec{font-size:24px;margin:0 0 6px;color:var(--forest);font-weight:700}
+h2.sec{font-size:24px;margin:0 0 6px;color:var(--ink);font-weight:700}
 p.seclead{margin:0 0 22px;color:var(--mute);font-size:14px}
 .tools{display:flex;justify-content:flex-end;margin-bottom:12px}
 .btn-exp{background:var(--paper);border:1px solid var(--line);border-radius:100px;padding:8px 20px;
   font-size:13px;font-weight:700;color:var(--forest);cursor:pointer;transition:.16s;font-family:inherit;
   display:inline-flex;align-items:center;gap:7px}
-.btn-exp:hover{border-color:var(--olive);background:#F3F5F0}
+.btn-exp:hover{border-color:var(--ink);background:var(--tint)}
 .btn-exp .ico{transition:.2s;display:inline-block;font-size:11px;color:var(--gold)}
 .btn-exp.on .ico{transform:rotate(180deg)}
 
 /* ===== proposal items ===== */
 details.item{background:var(--paper);border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden;transition:.16s}
-details.item[open]{border-color:var(--olive);box-shadow:0 4px 22px rgba(32,42,31,.07)}
+details.item[open]{border-color:var(--ink);box-shadow:0 3px 16px rgba(23,24,26,.08)}
 details.item>summary{cursor:pointer;list-style:none;padding:20px 24px;display:grid;
   grid-template-columns:44px 1fr auto 22px;gap:16px;align-items:center}
 details.item>summary::-webkit-details-marker{display:none}
-.idx{width:44px;height:44px;border-radius:11px;background:linear-gradient(140deg,var(--forest),var(--olive));
+.idx{width:44px;height:44px;border-radius:11px;background:var(--forest);
   color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px}
 .itxt h3{margin:0;font-size:17px;color:var(--forest);font-weight:700}
 .itxt p{margin:2px 0 0;font-size:13px;color:var(--mute)}
 .price{text-align:right;white-space:nowrap}
 .price b{display:block;font-size:19px;color:var(--forest);font-variant-numeric:tabular-nums}
 .price span{display:block;font-size:11.5px;color:var(--mute);margin-top:-2px}
-.arrow{color:var(--olive);font-size:12px;transition:.2s;text-align:center}
+.arrow{color:var(--mute);font-size:12px;transition:.2s;text-align:center}
 details[open]>summary .arrow{transform:rotate(90deg)}
 @media(max-width:700px){
   details.item>summary{grid-template-columns:38px 1fr;grid-template-areas:"i t" ". p";row-gap:10px}
@@ -84,28 +89,28 @@ details[open]>summary .arrow{transform:rotate(90deg)}
 ul.deliv{list-style:none;margin:0;padding:0}
 ul.deliv li{position:relative;padding:9px 0 9px 26px;border-bottom:1px dashed var(--line);font-size:14px}
 ul.deliv li:last-child{border-bottom:none}
-ul.deliv li::before{content:"";position:absolute;left:5px;top:18px;width:7px;height:7px;border-radius:50%;background:var(--sage)}
+ul.deliv li::before{content:"";position:absolute;left:5px;top:18px;width:7px;height:7px;border-radius:50%;background:var(--leaf)}
 ul.deliv li b{color:var(--forest)}
-.subnote{margin:14px 0 0;padding:13px 16px;background:#F4F6F1;border-left:3px solid var(--sage);
-  border-radius:0 9px 9px 0;font-size:13.5px;color:#414A3C}
+.subnote{margin:14px 0 0;padding:13px 16px;background:var(--tint);border-left:3px solid var(--leaf);
+  border-radius:0 9px 9px 0;font-size:13.5px;color:var(--body)}
 .subnote b{color:var(--forest)}
 .spec{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
-.spec span{background:#F2F4EE;border:1px solid var(--line);border-radius:100px;padding:4px 13px;font-size:12.5px;color:var(--forest);font-weight:600}
+.spec span{background:#fff;border:1px solid var(--line);border-radius:100px;padding:4px 13px;font-size:12.5px;color:var(--body);font-weight:600}
 .linkrow{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}
 .linkrow a{display:inline-flex;align-items:center;gap:8px;background:var(--forest);color:#fff;text-decoration:none;
   padding:11px 22px;border-radius:100px;font-size:13.5px;font-weight:700;transition:.16s;cursor:pointer}
-.linkrow a:hover{background:var(--olive)}
+.linkrow a:hover{background:#3B3F45}
 .linkrow a.gh{background:var(--paper);color:var(--forest);border:1px solid var(--line)}
-.linkrow a.gh:hover{background:#F3F5F0;border-color:var(--olive)}
+.linkrow a.gh:hover{background:var(--tint);border-color:var(--ink)}
 
-.caseteaser{margin-top:26px;background:linear-gradient(135deg,#F1F4EE,#E9EFE7);border:1px solid var(--line);
+.caseteaser{margin-top:26px;background:var(--tint);border:1px solid var(--line);
   border-radius:16px;padding:28px 32px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
 .caseteaser .ct{flex:1;min-width:260px}
 .caseteaser h3{margin:0 0 6px;font-size:19px;color:var(--forest)}
-.caseteaser p{margin:0;font-size:13.5px;color:#4A5145}
-.caseteaser a{display:inline-flex;align-items:center;gap:8px;background:var(--forest);color:#fff;cursor:pointer;
+.caseteaser p{margin:0;font-size:13.5px;color:var(--body)}
+.caseteaser a{display:inline-flex;align-items:center;gap:8px;background:var(--goldlt);color:#fff;cursor:pointer;
   text-decoration:none;padding:12px 26px;border-radius:100px;font-size:13.5px;font-weight:700;transition:.16s;white-space:nowrap}
-.caseteaser a:hover{background:var(--olive)}
+.caseteaser a:hover{background:#D8431E}
 
 /* ===== summary table ===== */
 .sumbox{background:var(--paper);border:1px solid var(--line);border-radius:14px;overflow:hidden}
@@ -113,17 +118,17 @@ table.sum{width:100%;border-collapse:collapse;font-size:14px}
 table.sum th{background:var(--forest);color:#fff;text-align:left;padding:13px 18px;font-size:12.5px;font-weight:700}
 table.sum td{padding:13px 18px;border-bottom:1px solid var(--line)}
 table.sum tr:last-child td{border-bottom:none}
-table.sum td.n{width:56px;text-align:center;color:var(--olive);font-weight:700}
+table.sum td.n{width:56px;text-align:center;color:var(--mute);font-weight:700}
 table.sum td.q{width:150px;color:var(--mute);font-size:13px}
 table.sum td.a{width:150px;text-align:right;font-variant-numeric:tabular-nums;font-weight:700;color:var(--forest)}
-table.sum tr.grand td{background:var(--forest);color:#fff;font-size:16px}
+table.sum tr.grand td{background:var(--goldlt);color:#fff;font-size:16px}
 table.sum tr.grand td.a{color:#fff;font-size:19px}
 @media(max-width:700px){table.sum td.q{display:none}table.sum th:nth-child(3){display:none}
   table.sum td,table.sum th{padding:11px 10px;font-size:13px}table.sum td.a{width:120px}}
 
 .notes{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px 26px}
 .notes ol{margin:0;padding-left:20px}
-.notes li{font-size:13.5px;margin:7px 0;color:#3E453B}
+.notes li{font-size:13.5px;margin:7px 0;color:var(--body)}
 .notes li b{color:var(--forest)}
 
 .sign{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}
@@ -137,7 +142,7 @@ table.sum tr.grand td.a{color:#fff;font-size:19px}
 .case:first-of-type{margin-top:34px}
 @media(max-width:640px){.case{padding:22px 20px}}
 .chead{display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap}
-.cnum{width:42px;height:42px;flex:0 0 42px;border-radius:11px;background:linear-gradient(140deg,var(--forest),var(--olive));
+.cnum{width:42px;height:42px;flex:0 0 42px;border-radius:11px;background:var(--forest);
   color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px}
 .ctxt{flex:1;min-width:220px}
 .ckicker{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:700;margin:0 0 3px}
@@ -145,75 +150,75 @@ table.sum tr.grand td.a{color:#fff;font-size:19px}
 .ctxt p.sub{margin:4px 0 0;font-size:13.5px;color:var(--mute)}
 .visit{display:inline-flex;align-items:center;gap:7px;background:var(--forest);color:#fff;text-decoration:none;
   padding:9px 18px;border-radius:100px;font-size:13px;font-weight:700;transition:.16s;white-space:nowrap}
-.visit:hover{background:var(--olive)}
+.visit:hover{background:#3B3F45}
 .visit.ghost{background:var(--paper);color:var(--forest);border:1px solid var(--line)}
-.visit.ghost:hover{border-color:var(--olive);background:#F3F5F0}
+.visit.ghost:hover{border-color:var(--ink);background:var(--tint)}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}
-.chips span{background:#F2F4EE;border:1px solid var(--line);border-radius:100px;padding:4px 14px;font-size:12.5px;color:var(--forest);font-weight:600}
+.chips span{background:#fff;border:1px solid var(--line);border-radius:100px;padding:4px 14px;font-size:12.5px;color:var(--body);font-weight:600}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:20px}
 @media(max-width:780px){.grid2{grid-template-columns:1fr}}
 .blk h3{margin:0 0 6px;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}
-.blk p{margin:0;font-size:14px;color:#3E453B}
+.blk p{margin:0;font-size:14px;color:var(--body)}
 .blk ul{margin:6px 0 0;padding-left:0;list-style:none}
-.blk li{position:relative;padding:7px 0 7px 22px;font-size:14px;border-bottom:1px dashed var(--line);color:#3E453B}
+.blk li{position:relative;padding:7px 0 7px 22px;font-size:14px;border-bottom:1px dashed var(--line);color:var(--body)}
 .blk li:last-child{border-bottom:none}
-.blk li::before{content:"";position:absolute;left:4px;top:16px;width:7px;height:7px;border-radius:50%;background:var(--sage)}
+.blk li::before{content:"";position:absolute;left:4px;top:16px;width:7px;height:7px;border-radius:50%;background:var(--leaf)}
 .blk li b{color:var(--forest)}
 .flow{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:20px 0 0}
 @media(max-width:780px){.flow{grid-template-columns:1fr 1fr}}
-.step{background:#F4F6F1;border:1px solid var(--line);border-radius:11px;padding:13px 14px}
-.step b{display:block;font-size:11px;color:var(--gold);letter-spacing:.08em;margin-bottom:3px}
+.step{background:var(--tint);border:1px solid var(--line);border-radius:11px;padding:13px 14px}
+.step b{display:block;font-size:11px;color:var(--add);letter-spacing:.08em;margin-bottom:3px}
 .step span{font-size:13px;color:var(--forest);font-weight:600;line-height:1.55;display:block}
 figure{margin:22px 0 0}
 figure img{width:100%;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
 figcaption{margin-top:9px;font-size:12.5px;color:var(--mute);text-align:center}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0 0}
 @media(max-width:780px){.stats{grid-template-columns:1fr 1fr}}
-.stat{background:linear-gradient(150deg,#F4F6F1,#EDF1EA);border:1px solid var(--line);border-radius:13px;padding:16px 18px}
-.stat b{display:block;font-size:11.5px;letter-spacing:.08em;color:var(--olive);font-weight:700}
-.stat u{display:block;text-decoration:none;font-size:27px;font-weight:700;color:var(--forest);font-variant-numeric:tabular-nums;line-height:1.35;margin-top:2px}
+.stat{background:var(--tint);border:1px solid var(--line);border-radius:13px;padding:16px 18px}
+.stat b{display:block;font-size:11.5px;letter-spacing:.08em;color:var(--mute);font-weight:700}
+.stat u{display:block;text-decoration:none;font-size:27px;font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums;line-height:1.35;margin-top:2px}
 .stat i{display:block;font-style:normal;font-size:11.5px;color:var(--mute)}
 table.kw{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:20px}
-table.kw th{background:#F5F5F0;color:var(--forest);text-align:left;padding:10px 12px;font-size:12.5px;border-bottom:2px solid var(--line);font-weight:700}
+table.kw th{background:var(--tint2);color:var(--forest);text-align:left;padding:10px 12px;font-size:12.5px;border-bottom:2px solid var(--line);font-weight:700}
 table.kw td{padding:10px 12px;border-bottom:1px solid var(--line)}
 table.kw tr:last-child td{border-bottom:none}
-table.kw td.num{text-align:right;font-variant-numeric:tabular-nums;font-weight:700;color:var(--forest);width:110px}
-table.kw td.num2{text-align:right;font-variant-numeric:tabular-nums;color:var(--olive);width:110px}
-.note{margin:20px 0 0;background:#F4F6F1;border-left:3px solid var(--sage);padding:14px 17px;border-radius:0 9px 9px 0;font-size:13.5px;color:#3E453B}
+table.kw td.kc{text-align:right;font-variant-numeric:tabular-nums;font-weight:700;color:var(--ink);width:110px}
+table.kw td.ke{text-align:right;font-variant-numeric:tabular-nums;color:var(--mute);width:110px}
+.note{margin:20px 0 0;background:var(--tint);border-left:3px solid var(--leaf);padding:14px 17px;border-radius:0 9px 9px 0;font-size:13.5px;color:var(--body)}
 .note b{color:var(--forest)}
 
 /* ===== detail ===== */
 .tag{display:inline-block;font-size:11.5px;font-weight:700;padding:3px 10px;border-radius:100px;white-space:nowrap}
-.t-ok{background:var(--okbg);color:var(--ok)}
-.t-add{background:var(--addbg);color:var(--add)}
-.t-sub{background:var(--subbg);color:var(--subc)}
+.t-ok{background:#fff;color:var(--ink);border:1px solid var(--ink)}
+.t-add{background:var(--addbg);color:var(--add);border:1px solid #F7D9CE}
+.t-sub{background:var(--subbg);color:var(--subc);border:1px solid var(--subbg)}
 details.cat{background:var(--paper);border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden;transition:.16s}
-details.cat[open]{border-color:var(--olive);box-shadow:0 4px 22px rgba(32,42,31,.07)}
+details.cat[open]{border-color:var(--ink);box-shadow:0 3px 16px rgba(23,24,26,.08)}
 details.cat>summary{cursor:pointer;padding:19px 24px;list-style:none;display:grid;grid-template-columns:44px 1fr auto 22px;gap:16px;align-items:center}
 details.cat>summary::-webkit-details-marker{display:none}
-.num{width:44px;height:44px;border-radius:11px;background:linear-gradient(140deg,var(--forest),var(--olive));
+details.cat>summary .num{width:44px;height:44px;border-radius:11px;background:var(--forest);
   color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px}
-.num.extra{background:linear-gradient(140deg,var(--gold),var(--goldlt))}
+details.cat>summary .num.extra{background:var(--goldlt)}
 .head-txt h3{margin:0;font-size:17px;color:var(--forest);font-weight:700}
 .head-txt p{margin:2px 0 0;font-size:13px;color:var(--mute)}
 .cnt{font-size:12px;color:var(--mute);white-space:nowrap}
-.chev{color:var(--olive);font-size:12px;transition:.2s;text-align:center}
+.chev{color:var(--mute);font-size:12px;transition:.2s;text-align:center}
 details[open]>summary .chev{transform:rotate(90deg)}
-@media(max-width:700px){details.cat>summary{grid-template-columns:38px 1fr}.num{width:38px;height:38px}.cnt,.chev{display:none}}
+@media(max-width:700px){details.cat>summary{grid-template-columns:38px 1fr}details.cat>summary .num{width:38px;height:38px}.cnt,.chev{display:none}}
 .cbody{padding:0 24px 24px}
 table.fn{width:100%;border-collapse:collapse;font-size:13.5px}
-table.fn th{background:#F5F5F0;color:var(--forest);text-align:left;padding:10px 12px;font-size:12.5px;border-bottom:2px solid var(--line);font-weight:700}
+table.fn th{background:var(--tint2);color:var(--forest);text-align:left;padding:10px 12px;font-size:12.5px;border-bottom:2px solid var(--line);font-weight:700}
 table.fn td{padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}
 table.fn tr:last-child td{border-bottom:none}
 td.f{font-weight:700;width:25%;color:var(--forest)}
 td.g{width:100px;white-space:nowrap}
 td.d{width:64px;text-align:center;font-size:12px}
 @media(max-width:700px){td.f{width:34%}td.d{display:none}table.fn th:nth-child(4){display:none}}
-.callout{margin-top:16px;background:#F4F6F1;border-left:3px solid var(--sage);padding:14px 17px;border-radius:0 9px 9px 0;font-size:13.5px;color:#3E453B}
+.callout{margin-top:16px;background:var(--tint);border-left:3px solid var(--leaf);padding:14px 17px;border-radius:0 9px 9px 0;font-size:13.5px;color:var(--body)}
 .callout b{color:var(--forest)}
 .panel{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin-bottom:14px}
 .panel table{width:100%;border-collapse:collapse;font-size:13.5px}
-.panel th{background:#F5F5F0;color:var(--forest);text-align:left;padding:10px 12px;font-size:12.5px;border-bottom:2px solid var(--line);font-weight:700}
+.panel th{background:var(--tint2);color:var(--forest);text-align:left;padding:10px 12px;font-size:12.5px;border-bottom:2px solid var(--line);font-weight:700}
 .panel td{padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}
 .panel tr:last-child td{border-bottom:none}
 .panel td.f{font-weight:700;color:var(--forest);width:22%}
@@ -230,16 +235,16 @@ td.d{width:64px;text-align:center;font-size:12px}
 .total{margin-top:10px;padding-top:10px;border-top:2px solid var(--line);display:flex;justify-content:space-between;font-weight:700;color:var(--forest);font-size:14px}
 .bar-row{display:grid;grid-template-columns:160px 1fr 120px;gap:12px;align-items:center;margin:11px 0;font-size:13px}
 .bar-lab{font-weight:700;color:var(--forest)}
-.bar-track{background:#EFEFE9;border-radius:6px;height:26px;overflow:hidden}
+.bar-track{background:var(--tint2);border-radius:6px;height:26px;overflow:hidden}
 .bar-fill{height:100%;border-radius:6px}
 .bar-val{text-align:right;font-variant-numeric:tabular-nums;font-weight:700;color:var(--forest)}
 @media(max-width:700px){.bar-row{grid-template-columns:104px 1fr 92px;font-size:12px}}
 
-.cta{margin:60px 0 0;background:linear-gradient(135deg,var(--forest),#3D5140);color:#fff;border-radius:16px;padding:42px 40px;text-align:center}
+.cta{margin:60px 0 0;background:var(--ink);color:#fff;border-radius:16px;padding:42px 40px;text-align:center}
 .cta h3{margin:0 0 10px;font-size:22px}
 .cta p{margin:0 0 22px;opacity:.86;font-size:14.5px}
 .cta a{display:inline-block;background:var(--goldlt);color:#fff;text-decoration:none;padding:12px 32px;border-radius:100px;font-weight:700;font-size:14.5px;transition:.16s;cursor:pointer}
-.cta a:hover{background:var(--gold)}
+.cta a:hover{background:#D8431E}
 footer{margin-top:52px;padding:26px 0 60px;border-top:1px solid var(--line);font-size:12px;color:var(--mute)}
 footer b{color:var(--forest)}
 </style>
@@ -261,7 +266,7 @@ footer b{color:var(--forest)}
     <p class="eyebrow">Proposal &amp; Quotation</p>
     <h1>品牌數位整合行銷提案<br><span class="thin">從平台建置到市場聲量，一次到位</span></h1>
     <p class="lead">跨國多語系電商建置　·　品牌策略　·　AI 影音　·　社群經營　·　媒體曝光　·　地圖商家優化</p>
-    <div class="rule"></div>
+    <div class="rule"><i></i><i></i><i></i></div>
   </div></div>
   <div class="wrap">
     <div class="meta"><table>
@@ -330,7 +335,7 @@ footer b{color:var(--forest)}
     <p class="eyebrow">Case Studies &amp; Results</p>
     <h1>參考案例與服務成效<br><span class="thin">實際上線的網站與可驗證的數據</span></h1>
     <p class="lead">以下為本方實際執行並已上線的專案，附網站連結與後台成效截圖。各案例皆可直接點入查看，數據取自 Google Search Console 原始報表。</p>
-    <div class="rule"></div>
+    <div class="rule"><i></i><i></i><i></i></div>
   </div></div>
   <div class="wrap">
 
@@ -431,12 +436,12 @@ footer b{color:var(--forest)}
     <h3 style="margin:26px 0 0;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold)">熱門查詢關鍵字</h3>
     <table class="kw">
       <tr><th>查詢關鍵字</th><th style="text-align:right">點擊</th><th style="text-align:right">曝光</th></tr>
-      <tr><td>40 呎貨櫃尺寸</td><td class="num">34</td><td class="num2">3,452</td></tr>
-      <tr><td>20 呎貨櫃尺寸</td><td class="num">25</td><td class="num2">4,014</td></tr>
-      <tr><td>20 呎貨櫃價格</td><td class="num">19</td><td class="num2">377</td></tr>
-      <tr><td>二手貨櫃回收</td><td class="num">19</td><td class="num2">189</td></tr>
-      <tr><td>貨櫃回收</td><td class="num">18</td><td class="num2">57</td></tr>
-      <tr><td>鋪路鐵板價格</td><td class="num">13</td><td class="num2">125</td></tr>
+      <tr><td>40 呎貨櫃尺寸</td><td class="kc">34</td><td class="ke">3,452</td></tr>
+      <tr><td>20 呎貨櫃尺寸</td><td class="kc">25</td><td class="ke">4,014</td></tr>
+      <tr><td>20 呎貨櫃價格</td><td class="kc">19</td><td class="ke">377</td></tr>
+      <tr><td>二手貨櫃回收</td><td class="kc">19</td><td class="ke">189</td></tr>
+      <tr><td>貨櫃回收</td><td class="kc">18</td><td class="ke">57</td></tr>
+      <tr><td>鋪路鐵板價格</td><td class="kc">13</td><td class="ke">125</td></tr>
     </table>
     <div class="note">關鍵字分布涵蓋「規格查詢」「價格查詢」「服務需求」三種意圖，代表文章不只吃到資訊型流量，也接得住已有明確需求的潛在客戶。</div>
   </section>
@@ -455,7 +460,7 @@ footer b{color:var(--forest)}
     <p class="eyebrow">Appendix　·　Item I</p>
     <h1>跨國多語系電商網站建置<br><span class="thin">詳細架構與交付說明</span></h1>
     <p class="lead">本節為報價單第一項「跨國多語系電商網站建置」之專屬附件，完整展開該項目的架構、功能與交付內容。其餘服務項目請參閱提案總覽。</p>
-    <div class="rule"></div>
+    <div class="rule"><i></i><i></i><i></i></div>
   </div></div>
   <div class="wrap">
     <div class="meta"><table>
@@ -825,7 +830,7 @@ const CATS=[
  ],
  note:"<b>從 SEO 到 AEO：</b>傳統 SEO 追求的是在 Google 搜尋結果排名靠前；AEO（答案引擎最佳化）則是讓 ChatGPT、Perplexity 這類 AI 工具在回答問題時引用你的內容。本方案兩者並行處理。<br><br>技術架構部分涵蓋 hreflang、canonical、Sitemap、robots 與結構化資料標記；AI 檢索部分則包含 llms.txt、問答式內容結構與引用友善標記。搭配前台採用的靜態產生框架，內容能被搜尋引擎與 AI 爬蟲完整讀取。<br><br><b>內容製作流程：</b>先進行四語系關鍵字研究並產出關鍵字地圖與架構建議書，接著提出 SEO 內容規劃書（各語系主題清單、內容架構與發布排程），經業主書面確認後才開始撰寫。日文與英文依當地市場重新進行關鍵字研究並以在地用語撰稿，非中文直譯。<br><br>交付節奏為首批 50 篇，其後每日交付 3 至 5 篇，600 篇預計 4 至 6 個月完成。<br><br><span style='color:#78766E;font-size:12.5px'>※ 本項為技術架構建置與內容製作服務。搜尋引擎與 AI 模型演算法之變動不在本方控制範圍內，故不就特定關鍵字排名或收錄數量作保證。</span>"},
 ];;
-const NEEDC={"必要":"#3F6B4A","建議":"#8A6520","選配":"#78766E"};
+const NEEDC={"必要":"#17181A","建議":"#C2401E","選配":"#6B7078"};
 const cbox=document.getElementById('cats');
 CATS.forEach(c=>{
   const d=document.createElement('details');d.className='cat';
@@ -875,8 +880,8 @@ const mk=a=>a.map(([k,v])=>`<div class="kv"><span>${k}</span><span>${v}</span></
 document.getElementById('costA').innerHTML=mk(A)+`<div class="total"><span>每年合計</span><span>約 6 至 13 萬</span></div>`;
 document.getElementById('costB').innerHTML=mk(B)+`<div class="total"><span>每年合計</span><span>約 62 至 229 萬</span></div>`;
 
-const TCO=[["模式 A｜託管（低）",30,"#6A7354","30 萬"],["模式 A｜託管（高）",65,"#6A7354","65 萬"],
-["模式 B｜兼職維運",310,"#A8813A","310 萬"],["模式 B｜資深全職",1145,"#86612B","1145 萬"]];
+const TCO=[["模式 A｜託管（低）",30,"#A2A7AE","30 萬"],["模式 A｜託管（高）",65,"#4B5057","65 萬"],
+["模式 B｜兼職維運",310,"#F79478","310 萬"],["模式 B｜資深全職",1145,"#F0532B","1145 萬"]];
 document.getElementById('tco').innerHTML=TCO.map(([l,v,c,t])=>
 `<div class="bar-row"><div class="bar-lab">${l}</div>
 <div class="bar-track"><div class="bar-fill" style="width:${Math.max(4,v/1200*100)}%;background:${c}"></div></div>
