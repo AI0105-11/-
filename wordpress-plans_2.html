@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WordPress.com 方案比較（台灣定價）</title>
+<style>
+  :root{
+    --bg:#faf9f7; --surface:#fff; --line:#e5e1da; --text:#1f1d1a; --muted:#6b6660;
+    --accent:#2a6f97; --accent-soft:#e8f0f5; --ok:#2f7d4f; --nope:#a89f94;
+    --free:#8a6d3b; --free-soft:#fdf6e6;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#171614; --surface:#211f1d; --line:#3a3733; --text:#f0ede8; --muted:#a8a29a;
+      --accent:#7fb8d8; --accent-soft:#22323c; --ok:#7fc79b; --nope:#736c63;
+      --free:#d9b877; --free-soft:#2e2718;
+    }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);line-height:1.75;
+    font-family:-apple-system,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:1140px;margin:0 auto;padding:56px 24px 96px}
+  h1{font-size:2.05rem;line-height:1.3;margin:0 0 12px;letter-spacing:-.01em}
+  .sub{color:var(--muted);margin:0}
+  .stamp{display:inline-block;margin-top:16px;font-size:.82rem;color:var(--muted);
+    border:1px solid var(--line);border-radius:999px;padding:4px 14px}
+  h2{font-size:1.32rem;margin:58px 0 14px;padding-bottom:10px;border-bottom:2px solid var(--line)}
+  .lead{color:var(--muted);font-size:.94rem;margin:0 0 4px}
+  .scroll{overflow-x:auto;margin-top:18px;border:1px solid var(--line);border-radius:14px;background:var(--surface)}
+  table{border-collapse:collapse;width:100%;font-size:.92rem}
+  table.cmp{min-width:840px}
+  table.price{min-width:700px}
+  th,td{padding:11px 13px;text-align:center;border-bottom:1px solid var(--line)}
+  thead th{position:sticky;top:0;background:var(--surface);font-size:.87rem;
+    border-bottom:2px solid var(--line);white-space:nowrap;z-index:2}
+  thead th.freecol{color:var(--free)}
+  tbody tr:last-child td{border-bottom:none}
+  th.row,td.row{text-align:left;font-weight:600;white-space:nowrap}
+  td.freecol{background:var(--free-soft)}
+  .v{color:var(--ok);font-weight:700}
+  .x{color:var(--nope)}
+  .txt{font-size:.84rem;line-height:1.5}
+  .sec td{background:var(--accent-soft);font-weight:700;text-align:left;
+    font-size:.85rem;letter-spacing:.04em;color:var(--accent)}
+  .big{font-size:1.05rem;font-weight:700}
+  .note{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);
+    border-radius:10px;padding:14px 18px;margin-top:18px;font-size:.9rem;color:var(--muted)}
+  .items{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:13px;margin-top:18px}
+  .item{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--free);
+    border-radius:10px;padding:15px 17px}
+  .item h4{margin:0 0 6px;font-size:.96rem}
+  .item p{margin:0;font-size:.88rem;color:var(--muted);line-height:1.7}
+  .item.has{border-left-color:var(--ok)}
+  footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:.84rem;color:var(--muted)}
+  footer a{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>WordPress.com 方案比較</h1>
+<p class="sub">台灣區官方定價（新台幣），含官方方案卡未列出的免費版規格。</p>
+<span class="stamp">擷取自官方定價頁 ・ 2026 年 8 月 14 日</span>
+
+<h2>價格</h2>
+<p class="lead">單位為每月均攤金額。年繳以上為一次付清整期；促銷價僅適用首期，之後依續訂價計費。</p>
+
+<div class="scroll">
+<table class="price">
+  <thead>
+    <tr>
+      <th class="row">方案</th>
+      <th>月繳</th>
+      <th>年繳<br><span class="txt">首期／續訂</span></th>
+      <th>兩年繳<br><span class="txt">首期／續訂</span></th>
+      <th>三年繳<br><span class="txt">首期／續訂</span></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="row" style="color:var(--free)">免費版</td>
+      <td class="big">NT$0</td><td colspan="3">無期限、無需付費</td>
+    </tr>
+    <tr>
+      <td class="row">個人版</td>
+      <td>NT$300</td>
+      <td><span class="big">NT$130</span><br><span class="txt">續訂 NT$225</span></td>
+      <td><span class="big">NT$104</span><br><span class="txt">續訂 NT$180</span></td>
+      <td><span class="big">NT$91</span><br><span class="txt">續訂 NT$158</span></td>
+    </tr>
+    <tr>
+      <td class="row">進階版</td>
+      <td>NT$550</td>
+      <td><span class="big">NT$240</span><br><span class="txt">續訂 NT$398</span></td>
+      <td><span class="big">NT$192</span><br><span class="txt">續訂 NT$332</span></td>
+      <td><span class="big">NT$168</span><br><span class="txt">續訂 NT$290</span></td>
+    </tr>
+    <tr>
+      <td class="row">商用版</td>
+      <td>NT$1200</td>
+      <td><span class="big">NT$799</span><br><span class="txt">續訂 NT$1150</span></td>
+      <td><span class="big">NT$639</span><br><span class="txt">續訂 NT$919</span></td>
+      <td><span class="big">NT$559</span><br><span class="txt">續訂 NT$813</span></td>
+    </tr>
+    <tr>
+      <td class="row">電子商務版</td>
+      <td>NT$2230</td>
+      <td><span class="big">NT$1438</span><br><span class="txt">續訂 NT$2069</span></td>
+      <td><span class="big">NT$1150</span><br><span class="txt">續訂 NT$1655</span></td>
+      <td><span class="big">NT$1007</span><br><span class="txt">續訂 NT$1500</span></td>
+    </tr>
+    <tr>
+      <td class="row">企業版</td>
+      <td colspan="4">官方頁面未列價格，須另行洽詢</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="note">
+「一年免費網域名稱」僅隨年繳以上方案提供。選擇月繳時，四個付費方案都不含免費網域。
+</div>
+
+<h2>免費版規格</h2>
+<p class="lead">官方方案卡不顯示免費版，以下取自定價頁的方案比較表。</p>
+
+<div class="items">
+  <div class="item">
+    <h4>網址與廣告</h4>
+    <p>無免費網域，網站顯示 WordPress.com 廣告給訪客（比較表「訪客不會看到廣告」該欄為不含）。</p>
+  </div>
+  <div class="item">
+    <h4>儲存空間</h4>
+    <p>1 GB。個人版 6 GB、進階版 13 GB、商用版與電子商務版 50 GB。</p>
+  </div>
+  <div class="item">
+    <h4>外掛程式</h4>
+    <p>不可安裝，也不含外掛自動更新。四個付費方案皆可安裝。</p>
+  </div>
+  <div class="item">
+    <h4>交易費</h4>
+    <p>標準付款功能交易費 10%（另計標準手續費）。個人版 8%、進階版 4%、商用版 2%、電子商務版 0%。</p>
+  </div>
+  <div class="item">
+    <h4>訪客統計</h4>
+    <p>僅 7 天內基本統計數字。個人版為完整歷史記錄與篩選工具，進階版以上為 UTM 與裝置分析。</p>
+  </div>
+  <div class="item">
+    <h4>設計自訂</h4>
+    <p>不含進階版佈景主題、全站字型與色彩設定、CSS 自訂、引導式網站建置工具。</p>
+  </div>
+  <div class="item">
+    <h4>支援</h4>
+    <p>不含 Happiness 團隊支援。官方說明為社群論壇取得免費支援。</p>
+  </div>
+  <div class="item">
+    <h4>AI 功能</h4>
+    <p>AI 助理與工具要求上限 20 次。不含「內建網站助理功能」。</p>
+  </div>
+  <div class="item">
+    <h4>主機環境</h4>
+    <p>不含各網站基礎架構相互隔離。</p>
+  </div>
+  <div class="item has">
+    <h4>免費版仍包含（一）</h4>
+    <p>頁面數、使用者數、頻寬皆不限；文章編輯時光機；表單；Jetpack Search；智慧型轉址；網站集中管理；WordPress 自動更新。</p>
+  </div>
+  <div class="item has">
+    <h4>免費版仍包含（二）</h4>
+    <p>附 SSL 的 DNS；突發高流量對應；高時脈 CPU；全球邊緣快取；28 個以上地點的 CDN；資料中心自動容錯移轉。</p>
+  </div>
+  <div class="item has">
+    <h4>免費版仍包含（三）</h4>
+    <p>垃圾內容與駭侵防護；Akismet；DDoS 防護；惡意軟體偵測移除；WAF；效能監控與活動日誌；內建電子報與 RSS；社群媒體自動分享；內容付費牆；付費訂戶。</p>
+  </div>
+</div>
+
+<h2>完整功能對照</h2>
+<p class="lead">依官方比較表逐列整理。✓ 為包含，— 為不包含。</p>
+
+<div class="scroll">
+<table class="cmp">
+  <thead>
+    <tr>
+      <th class="row">項目</th>
+      <th class="freecol">免費版</th><th>個人版</th><th>進階版</th><th>商用版</th><th>電子商務版</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="sec"><td colspan="6">基本功能</td></tr>
+    <tr><td class="row">頁面數量不限</td><td class="freecol v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">使用者人數不限</td><td class="freecol v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">頻寬不受限</td><td class="freecol v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">文章編輯時光機</td><td class="freecol v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">一年免費網域名稱</td><td class="freecol x">—</td><td class="v">✓ 年繳起</td><td class="v">✓ 年繳起</td><td class="v">✓ 年繳起</td><td class="v">✓ 年繳起</td></tr>
+    <tr><td class="row">儲存空間</td><td class="freecol">1 GB</td><td>6 GB</td><td>13 GB</td><td>50 GB</td><td>50 GB</td></tr>
+    <tr><td class="row">訪客統計</td><td class="freecol txt">7 天內基本數字</td><td class="txt">完整歷史記錄、篩選、尖峰時段</td><td class="txt">UTM 與裝置分析</td><td class="txt">UTM 與裝置分析</td><td class="txt">UTM 與裝置分析</td></tr>
+    <tr><td class="row">支援</td><td class="freecol x">—</td><td class="txt">Happiness 團隊</td><td class="txt">即時支援</td><td class="txt">全年無休優先專家</td><td class="txt">全年無休優先專家</td></tr>
+    <tr><td class="row">安裝外掛程式</td><td class="freecol x">—</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">外掛程式組合自動更新</td><td class="freecol x">—</td><td class="x">—</td><td class="x">—</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">表單</td><td class="freecol v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">進階表單功能</td><td class="freecol x">—</td><td class="x">—</td><td class="x">—</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">Jetpack Search</td><td class="freecol v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">智慧型轉址</td><td class="freecol v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">內建網站助理功能</td><td class="freecol x">—</td><td class="txt">有使用限制</td><td class="txt">有使用限制</td><td class="v">✓</td><td class="v">✓</td></tr>
+
+    <tr class="sec"><td colspan="6">效能提升</td></tr>
+    <tr><td class="row">附有 SSL 的極快 DNS</td><td class="freecol v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">突發高流量對應</td><td class="freecol v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">高時脈 CPU</td><td class="freecol v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">全球邊緣快取</td><td class="freecol v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">28 個以上地點的 CDN</td><td class="freecol v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+
+    <tr class="sec"><td colspan="6">高穩定性</td></tr>
+    <tr><td class="row">資料中心自動容錯移轉</td><td class="freecol v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">單鍵還原</td><td class="freecol x">—</td><td class="x">—</td><td class="x">—</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">即時備份</td><td class="freecol x">—</td><td class="x">—</td><td class="x">—</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">運作時間監控</td><td class="freecol x">—</td><td class="x">—</td><td class="x">—</td><td class="v">✓</td><td class="v">✓</td></tr>
+
+    <tr class="sec"><td colspan="6">開發人員工具</td></tr>
+    <tr><td class="row">SFTP／SSH、WP-CLI</td><td class="freecol x">—</td><td class="x">—</td><td class="x">—</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">Git 指令與 GitHub 部署</td><td class="freecol x">—</td><td class="x">—</td><td class="x">—</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">免費測試用網站</td><td class="freecol x">—</td><td class="x">—</td><td class="x">—</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">網站集中管理</td><td class="freecol v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">WordPress 自動更新</td><td class="freecol v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+
+    <tr class="sec"><td colspan="6">保障和安全</td></tr>
+    <tr><td class="row">垃圾內容與駭侵攻擊防護</td><td class="freecol v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">Akismet 垃圾訊息防護</td><td class="freecol v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">DDoS 防護與解決</td><td class="freecol v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">惡意軟體偵測移除</td><td class="freecol v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">Web 應用防火牆（WAF）</td><td class="freecol v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">效能最佳化、監控、活動日誌</td><td class="freecol v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">各網站基礎架構相互隔離</td><td class="freecol x">—</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+
+    <tr class="sec"><td colspan="6">自訂設計</td></tr>
+    <tr><td class="row">佈景主題與版面配置</td><td class="freecol v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">進階版佈景主題</td><td class="freecol x">—</td><td class="txt">多種</td><td class="txt">全部</td><td class="txt">全部</td><td class="txt">全部與商店主題</td></tr>
+    <tr><td class="row">引導式網站建置工具</td><td class="freecol x">—</td><td class="txt">有使用限制</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">全站字型與色彩自訂</td><td class="freecol x">—</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">以 CSS 自訂網站</td><td class="freecol x">—</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+
+    <tr class="sec"><td colspan="6">成長與獲利工具</td></tr>
+    <tr><td class="row">訪客不會看到廣告</td><td class="freecol x">—</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">AI 助理與工具</td><td class="freecol txt">上限 20 次</td><td class="txt">有使用限制</td><td class="txt">有使用限制</td><td class="txt">強化</td><td class="txt">強化</td></tr>
+    <tr><td class="row">內建電子報與 RSS</td><td class="freecol v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">社群媒體自動分享</td><td class="freecol v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">內容付費牆</td><td class="freecol v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">付費訂戶</td><td class="freecol v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">SEO 與分析工具</td><td class="freecol x">—</td><td class="x">—</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">連結 Google Analytics</td><td class="freecol x">—</td><td class="x">—</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">透過 WordAds 獲利</td><td class="freecol x">—</td><td class="x">—</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">付款按鈕（Stripe）</td><td class="freecol x">—</td><td class="x">—</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">PayPal 付款按鈕</td><td class="freecol x">—</td><td class="x">—</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">贊助和小費</td><td class="freecol x">—</td><td class="x">—</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">上傳影片</td><td class="freecol x">—</td><td class="x">—</td><td class="v">✓</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">VideoPress 250 GB 專屬空間</td><td class="freecol x">—</td><td class="x">—</td><td class="x">—</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">一年免費商用電子郵件</td><td class="freecol x">—</td><td class="x">—</td><td class="x">—</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">電子郵件行銷（MailPoet）</td><td class="freecol x">—</td><td class="x">—</td><td class="x">—</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">200 美元廣告點數</td><td class="freecol x">—</td><td class="x">—</td><td class="x">—</td><td class="v">✓</td><td class="v">✓</td></tr>
+    <tr><td class="row">標準付款功能交易費</td><td class="freecol">10%</td><td>8%</td><td>4%</td><td>2%</td><td class="v">0%</td></tr>
+    <tr><td class="row">WooCommerce 付款交易費</td><td class="freecol x">—</td><td class="x">—</td><td class="x">—</td><td class="v">0%</td><td class="v">0%</td></tr>
+
+    <tr class="sec"><td colspan="6">商務解決方案</td></tr>
+    <tr><td class="row">進階版商店佈景主題</td><td class="freecol x">—</td><td class="x">—</td><td class="x">—</td><td class="txt">以外掛程式提供</td><td class="v">✓</td></tr>
+    <tr><td class="row">店面設計工具</td><td class="freecol x">—</td><td class="x">—</td><td class="x">—</td><td class="txt">以外掛程式提供</td><td class="v">✓</td></tr>
+    <tr><td class="row">產品數量不限</td><td class="freecol x">—</td><td class="x">—</td><td class="x">—</td><td class="txt">以外掛程式提供</td><td class="v">✓</td></tr>
+    <tr><td class="row">商品庫存管理</td><td class="freecol x">—</td><td class="x">—</td><td class="x">—</td><td class="txt">以外掛程式提供</td><td class="v">✓</td></tr>
+    <tr><td class="row">簡化結帳流程</td><td class="freecol x">—</td><td class="x">—</td><td class="x">—</td><td class="txt">以外掛程式提供</td><td class="v">✓</td></tr>
+    <tr><td class="row">在 60 多國銷售、135 種貨幣</td><td class="freecol x">—</td><td class="x">—</td><td class="x">—</td><td class="txt">以外掛程式提供</td><td class="v">✓</td></tr>
+    <tr><td class="row">產品附加項目、組合包套</td><td class="freecol x">—</td><td class="x">—</td><td class="x">—</td><td class="txt">以付費外掛提供</td><td class="v">✓</td></tr>
+    <tr><td class="row">動態追加銷售、大量折扣</td><td class="freecol x">—</td><td class="x">—</td><td class="x">—</td><td class="txt">以付費外掛提供</td><td class="v">✓</td></tr>
+    <tr><td class="row">自訂自動化行銷</td><td class="freecol x">—</td><td class="x">—</td><td class="x">—</td><td class="txt">以付費外掛提供</td><td class="v">✓</td></tr>
+    <tr><td class="row">整合一線物流業者</td><td class="freecol x">—</td><td class="x">—</td><td class="x">—</td><td class="txt">以付費外掛提供</td><td class="v">✓</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="note">
+官方頁面本身有一處數字不一致：方案卡寫「60000 種以上外掛程式」（6 萬），比較表的說明則寫「50000 多種外掛程式」（5 萬）。
+</div>
+
+<footer>
+  資料來源：<a href="https://wordpress.com/zh-tw/pricing/">WordPress.com 官方定價頁（繁體中文）</a>，2026 年 8 月 14 日擷取。價格依所在地區與帳號狀態而異，實際以結帳頁面為準。
+</footer>
+
+</div>
+</body>
+</html>
